@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Fuel Cell Car</title>
+    <title>Bluetooth Door Lock</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -121,25 +121,30 @@ position: relative;
 
    <div id="nathan">
         <div id="nathantext">
-            <h3>Line-Following Fuel Cell Car</h3>
+            <h3>Bluetooth Door Lock</h3>
         </div>
     </div>
 
     <div id="info">
     	<div class="maxwidth">
-    		<h4> Language(s): C++ </h4>
-            <h4> Tools: MSP430 Microcontroller
-    		<h4> Accomplice(s): Nik Vanderveen, Nick Pellegrino, Bryan Mailloux</h4>
-    		<h4> Role(s): Programming, Assembling, Testing (With other students)</h4>
-            <h4>How it operates:</h4>
-    		<p> This project required our team to assemble a fuel cell car that could autonomously drive through obstacle courses. This was acheived by using an MSP430 Microcontroller which connects to the wheel motors and various sensors. The sensors include two brightness sensors for line following and a button on the front for collision detection. Various patterns of line following and collisions were used to program ways to get through three different obstacles courses.  </p>
+    		<h4>Language(s): Java (Android), XML (Android), Arduino C/C++ (Arduino UNO with the Arduino IDE)</h4>
+    		<h4>Accomplice(s): None (Personal Project) </h4>
+    		
+            <h4>How it operates: </h4>
+    		<p> The system involves communication of an Android device and an Arduino UNO via Bluetooth. After a connection is established between the Android application and the Arduino Bluetooth module, the user can enter a password and click the "lock" or "unlock" button. This information is sent as a byte array from the Android device to the Arduino, which determines if the password is correct, and determines the requested action. If correct, the Arduino will then turn a servo in the required direction, which will either lock or unlock the door it is attached to. The Arduino also sends verification of the action that was performed back to the Android device.
+            </p>
 
-    	
-    		<p> The code is avliable on my github, <a href="http://github.com/nathan-leung/FetchMaster5000">here</a>.</p>
+    		<p> The actual code is avliable on my github, <a href="http://github.com/nathan-leung/FetchMaster5000">here</a>.</p>
 
     		<h3> Additional pictures/video </h3>
-    		<p>One of the obstacle courses. (Note that the top is slightly cut off.)</p>
-    		<img class="pic" src="../course.jpg" />
+    		<p>Front.</p>
+    		<img class="pic" src="../vend1.jpg" />
+    		<p>Bottom.</p>
+    		<img class="pic" src="../vend2.jpg" />
+    		<video width="480" height="800" controls>
+  				<source src="../vending.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
     	</div>
     </div>
 
