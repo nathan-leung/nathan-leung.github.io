@@ -1,4 +1,4 @@
-body {
+/*body {
     margin:0;
     font-family: verdana;
   }
@@ -107,11 +107,7 @@ position: relative;
     border-bottom:1px gray solid;
 }
 
-#projects {
-    padding:20px 0 50px 0;
-    font-weight:normal;
-    border-bottom:1px gray solid;
-}
+
 
 .maxwidth {
      max-width:1000px;
@@ -131,7 +127,12 @@ position: relative;
 
 
 
-
+*/
+#projects {
+    padding:20px 0 50px 0;
+    font-weight:normal;
+    border-bottom:1px gray solid;
+}
 
 .aProject {
     background-color: #E6E6E6;
@@ -179,4 +180,236 @@ position: relative;
     padding:20px;
     color:black;
     text-decoration: none;
+}
+
+body {
+    margin:0;
+    font-family: verdana;
+  }
+
+  #topbar {
+    background-color: white;
+    width:100%;
+    height:60px;
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    opacity:0.8;
+    z-index:2;
+    border-bottom:1px black solid;
+  }
+
+  .fixedwidth {
+    margin: 0 auto;
+  }
+
+
+  #topbuttons {
+    padding:0;
+    margin:0;
+    margin:0 auto;
+width:650px;
+    padding-top:20px;
+    
+  }
+
+
+
+  #topbuttons li {
+    list-style: none;
+    float:left;
+    padding:0 50px 0 50px;
+    border-right:1px black solid;
+
+  }
+
+  #campus {
+    position:relative;
+    top:-60px;
+    z-index:1;
+    height:501px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+
+#projecttitle {
+    background-image: url("eng5.png");
+    width:100%;
+    background-size: cover;
+    height:300px; 
+    background-position:center;
+    border-bottom:4px black solid;
+
+}
+
+
+
+#projecttext {
+position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+#projecttitle h1 {
+    font-size: 5.5em;
+    margin:0;
+    color:white;
+    text-align:center;
+
+
+}
+
+#projecttitle h3 {
+    font-size: 2em;
+    margin:0;
+    color:white;
+    text-align:center;
+   
+
+}
+
+#nathan {
+    background-image: url("uw.jpg");
+    height:620px;
+    width:100%;
+    background-position:center;
+    border-bottom:4px black solid;
+
+}
+
+#projectsmall {
+    background-image: url("eng5.png");
+    width:100%;
+    background-size: cover;
+    height:300px; 
+    background-position:center;
+    border-bottom:4px black solid;
+
+}
+
+#projectsmall h3 {
+    font-size: 3em;
+    margin:0;
+    color:white;
+    text-align:center;
+   
+
+}
+
+
+#nathantext {
+position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+#test h3 {
+    font-size: 3em;
+    margin:0;
+    color:white;
+    text-align:center;
+}
+
+#nathantext {
+position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+#nathan h1 {
+    font-size: 5.5em;
+    margin:0;
+    color:white;
+    text-align:center;
+
+
+}
+
+#nathan h3 {
+    font-size: 2em;
+    margin:0;
+    color:white;
+    text-align:center;
+   
+
+}
+
+
+#about {
+    text-align:center;
+    width:100%;
+    padding-top:20px;
+
+}
+
+#about h1 {
+    font-weight: normal;
+
+
+}
+
+#about p {
+    max-width:500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom:0px;
+    /*border-bottom:1px gray solid;*/
+}
+
+#projects {
+    padding:100px 0 50px 0;
+    font-weight:normal;
+    border-bottom:1px gray solid;
+}
+
+.maxwidth {
+     max-width:1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#me {
+    width:300px;
+    border-radius: 5px;
+    border: 1px gray solid;
+}
+
+#contact {
+    text-decoration: none;
+    padding-bottom:0px;
+   
+}
+
+#contact p {
+    float: right;
+}
+
+#flowchart {
+    width:80%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
+    margin:0;
+}
+
+#flo {
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+.pic {
+    width:80%;
+}
+
+.picSmall {
+    min-width: 100px;
+    max-width: 300px;
+    padding:0 5px 0 5px;
+    float:left;
 }
