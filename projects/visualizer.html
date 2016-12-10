@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Audio Frequency Spectrum Visualizer</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+     
+</head>
+
+<body>
+
+    <div id="topbar">
+        <div class="fixedwidth">
+             <ul id="topbuttons">
+                <li><a href="http://nathan-leung.github.io">About</a></li>
+                <li ><a href="http://nathan-leung.github.io/projects/projects">Projects</a></li>
+                <li ><a href="http://nathan-leung.github.io/projects/resume">Resume</a></li>
+                <li style="border:none"><a href="http://nathan-leung.github.io/contact">Contact</a></li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+   <div id="projectsmall">
+        <div id="projecttext">
+            <h3>Audio Frequency Spectrum Visualizer</h3>
+        </div>
+    </div>
+
+    <div id="info">
+        <div class="maxwidth">
+            <h4>Platform</h4>
+            <p>This project was built entirely in MATLAB.</p>
+
+            <h4>What it is</h4>
+            <ul>
+              <li>An audio file is made up of many different frequencies, from 20Hz to 20000Hz (Range of human hearing)</li>
+              <li>This application displays the relative presence of each of these frequencies in an audio sample, in the form of a bar graph</li>
+              <li>The graph is updated every XXXXms, and animates as the audio sample is playing</li>
+            </ul>
+
+            <h4>How it works</h4>
+                <ul>
+                  <li>The bands of frequencies to analyze are defined by the user. For the best display, the range of each band should be exponentially larger than the last. This is because the human ear perceives lower frequencies to be louder than higher ones.</li>
+                  <li>The audio sample is run through a band pass filter of each of the bands. What this does is add gain to the frequencies within the band, and attenuates frequencies outside the band. This is done by creating a transfer function to represent each band, and doing a lot of math stuff with it.</li>
+                  <li>Doing this will give a new audio sample for each of the bands that were specified. If you were to listen to them, the lower frequency audio samples would only have the bass-y sounds, and the higher frequency samples would have the hi-hats and all other high frequncy sounds.</li>
+                  <li>Each audio sample is analyzed every XXms. Over this time period, the root-mean-squared average (getting the regular average of the sample would give us zero since its a sinusoidal wave. This average gives us the 'energy' of the wave so we can get a good idea of the amplitude over the interval) is calculated </li>
+                  <li>The average values for each band are compared and scaled between 0 and 1 relative to each other.</li>
+                  <li>The audio file plays and uses the scaled values to draw a bar graph of each of the bands.</li>
+                </ul>
+                    
+            <p> The code is avaliable on my github, <a href="http://github.com/nathan-leung/FetchMaster5000">here</a>.</p>
+
+            <h3> Additional pictures/video </h3>
+            <p>Front.</p>
+            <img class="pic" src="../vend1.jpg" />
+            <p>Bottom.</p>
+            <img class="pic" src="../vend2.jpg" />
+            <video width="480" height="800" controls>
+                <source src="../vending.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

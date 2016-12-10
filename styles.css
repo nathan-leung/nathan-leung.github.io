@@ -273,7 +273,7 @@ position: relative;
 
 #nathan {
     background-image: url("uw.jpg");
-    height:620px;
+    height:400px;
     width:100%;
     background-position:center;
     border-bottom:4px black solid;
@@ -362,7 +362,7 @@ position: relative;
 }
 
 #projects {
-    padding:100px 0 50px 0;
+    padding:50px 0 50px 0;
     font-weight:normal;
     border-bottom:1px gray solid;
 }
@@ -387,6 +387,25 @@ position: relative;
 
 #contact p {
     float: right;
+}
+
+#contactpage {
+    text-decoration: none;
+    padding-top:50px;
+    padding-bottom:0px;
+}
+
+#resume {
+height: 100%;
+   min-height: 100%;
+   overflow:hidden;
+
+}
+
+#resumeobj {
+    height: 100%;
+   min-height: 100%;
+   overflow:hidden;
 }
 
 #flowchart {

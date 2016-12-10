@@ -35,7 +35,8 @@
 
     <div id="info">
     	<div class="maxwidth">
-    		<h4>Language(s): Java (Android), XML (Android), Arduino C/C++ (Arduino UNO with the Arduino IDE)</h4>
+            <h4>Platform</h4>
+            <p>This project uses an Arduino UNO microcontroller (C++) and an Android application (Java)</p>
     		
             <h4>How it operates: </h4>
     		<p> The system involves communication of an Android device and an Arduino UNO via Bluetooth. After a connection is established between the Android application and the Arduino Bluetooth module, the user can enter a password and click the "lock" or "unlock" button. This information is sent as a byte array from the Android device to the Arduino, which determines if the password is correct, and determines the requested action. If correct, the Arduino will then turn a servo in the required direction, which will either lock or unlock the door it is attached to. The Arduino also sends verification of the action that was performed back to the Android device.
