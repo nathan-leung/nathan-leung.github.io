@@ -396,7 +396,8 @@ position: relative;
 }
 
 #resume {
-height: 100%;
+height:auto;
+width:auto;
    min-height: 100%;
    overflow:hidden;
 
