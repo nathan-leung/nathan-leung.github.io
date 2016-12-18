@@ -190,7 +190,7 @@ body {
   #topbar {
     background-color: white;
     width:100%;
-    height:60px;
+    height:48px;
     padding:0px;
     margin:0px;
     position:fixed;
@@ -205,6 +205,17 @@ body {
 
 
   #topbuttons {
+        float:right;
+      text-align: right;
+      display: inline;
+      margin: 0;
+      padding:0px 4px 17px 0;
+      list-style: none;
+}
+
+
+/*
+#topbuttons {
     padding:0;
     margin:0;
     margin:0 auto;
@@ -212,16 +223,38 @@ width:650px;
     padding-top:20px;
     
   }
+*/
 
+#topbuttons li {
+  font: bold 12px/18px sans-serif;
+  color:black;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
 
-
+/*
   #topbuttons li {
     list-style: none;
     float:left;
     padding:0 50px 0 50px;
     border-right:1px black solid;
 
-  }
+  }*/
+
+  #topbuttons li:hover {
+  background: #555;
+  color: #fff;
+  border-bottom: 3px;
+  border-bottom-color: black;
+}
 
   #campus {
     position:relative;
