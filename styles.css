@@ -175,6 +175,13 @@ position: relative;
     margin:0;
 }
 
+.aProject:hover {
+    background: #555;
+    color: #fff;
+    border-bottom: 3px;
+    border-bottom-color: black;
+}
+
 .projectlink {
 
     padding:20px;
@@ -233,11 +240,11 @@ width:650px;
   position: relative;
   padding: 15px 20px;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
+/*  -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
-  transition: all 0.2s;
+  transition: all 0.2s;*/
 }
 
 /*
