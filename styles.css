@@ -473,3 +473,14 @@ width:auto;
     padding:0 5px 0 5px;
     float:left;
 }
+
+.video_container {
+    max-width:1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.video_container video {
+  width: 100%;
+  height: auto;
+}
