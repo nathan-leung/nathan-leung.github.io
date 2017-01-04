@@ -401,6 +401,10 @@ position: relative;
     /*border-bottom:1px gray solid;*/
 }
 
+#padtop {
+  padding-top:5px;
+}
+
 #projects {
     padding:50px 0 50px 0;
     font-weight:normal;
