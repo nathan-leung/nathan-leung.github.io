@@ -394,6 +394,7 @@ position: relative;
 }
 
 #about p {
+  text-align:left;
     max-width:500px;
     margin-right: auto;
     margin-left: auto;
