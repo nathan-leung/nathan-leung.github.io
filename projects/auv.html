@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Zombie Bomber Video Game</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+     
+</head>
+
+<body>
+
+    <div id="topbar">
+        <div class="fixedwidth">
+             <ul id="topbuttons">
+                <a href="http://nathan-leung.github.io"><li>About</li></a>
+                <a href="http://nathan-leung.github.io/projects/list"><li>Projects</li></a>
+<!--                <a href="http://nathan-leung.github.io/resume"><li>Resume</li></a>
+                <a href="http://nathan-leung.github.io/contact"><li>Contact</li></a>
+-->    
+        </ul>
+
+
+        </div>
+
+    </div>
+
+   <div id="projectsmall">
+        <div id="projecttext">
+            <h3>Autonomous Underwater Vehicle</h3>
+        </div>
+    </div>
+
+    <div id="info">
+    	<div class="maxwidth">
+
+          <p> <a href="http://nathan-leung.github.io/projects/list">Back to Project List</a> </p>
+            <p>This software for this project was built on an Arduino. Hardware includes DC motors, motor controllers, a depth sensor, an IMU, and a waterproof casing </p>
+
+            <p> I designed and was the primary engineer for the controls algorithm. I was also in charge of writing the software interface for the IMU and attitude heading and reference system (AHRS). </p>
+
+            <p> Unfortunately I am not permitted to post the code for the robot publically, since there is a potential for other students to reuse code for their own project. </p>
+
+            <p>Here's a video of the AUV in action. </p>
+
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/watch?v=cs1_ZFSertI&feature=youtu.be">
+            </iframe>
+
+            <!-- <div class="video_container">
+            <video controls>
+              <source src="../rov.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+             </video>
+            </div> -->
+
+            <h3> Flowchart for the single threaded software </h3>
+            <img class="pic" src="../software.png" />
+
+            <h3> Control Feedback loop </h3>
+            <p> Three intertwined control feedback loops were used to control pitch, yaw, and depth. The motors were characterized experimentally to find optimal gain constants for each PID. Pitch and yaw work by offsetting the motors in opposite directions, such that the submarine will turn a certain way.</p>
+            <img class="pic" src="../controls.png" />
+            <p> And here's a solidworks mockup </p>
+            <img class="pic" src="../solidworks.png" />
+
+    	</div>
+    </div>
+
+
+
+</body>
+
+</html>
